@@ -11,7 +11,6 @@ departamento as (
 select
     e.*,
     c.titulo_cargo as cargo_titulo,
-    c.es_operativo,
     d.nombre_departamento as departamento_nombre
 from snap_empleado e
 left join cargo c on e.id_cargo_nk = c.id_cargo_nk

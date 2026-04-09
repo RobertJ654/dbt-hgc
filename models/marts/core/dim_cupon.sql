@@ -7,10 +7,7 @@ select
     c.codigo_cupon,
     c.tipo_descuento,
     c.valor_descuento_nominal,
-    c.fecha_expiracion,
     ca.nombre_campana,
-    ca.canal_campana,
-    ca.fecha_inicio_campana,
-    ca.fecha_fin_campana
+    ca.canal_campana
 from cupones c
 left join campanas ca on c.id_campana_nk = ca.id_campana_nk

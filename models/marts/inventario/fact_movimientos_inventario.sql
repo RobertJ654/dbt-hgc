@@ -9,7 +9,7 @@ select
     dtm.id_tipo_mov_sk,
 
     m.id_movimiento_nk as nro_movimiento_dd,
-    m.id_pedido_asociado_nk as nro_pedido_asociado_dd,
+    m.id_pedido_nk as nro_pedido_asociado_dd,
     m.motivo as motivo_dd,
 
     m.cantidad_movimiento,

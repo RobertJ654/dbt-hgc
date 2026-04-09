@@ -4,7 +4,7 @@ select
     id_proveedor as id_proveedor_nk,
     id_sucursal as id_sucursal_nk,
     cast(fecha_pedido as date) as fecha_pedido,
-    cast(fecha_recepcion_esperada as date) as fecha_recepcion_esperada,
+    cast(fecha_recepcion as date) as fecha_recepcion_esperada,
     estado as estado_oc,
     cast(total as numeric(10,2)) as monto_total
 from source

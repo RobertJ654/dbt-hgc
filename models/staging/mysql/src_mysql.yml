@@ -1,8 +1,9 @@
 version: 2
 
 sources:
-  - name: raw_mysql
-    database: HGC_DW  
+  - name: raw_inventario
+    database: HGC_DW
+    schema: BRONZE_MYSQL
     description: "Gestión de almacenes, recetas BOM, compras y mermas"
     tables:
       - name: insumos

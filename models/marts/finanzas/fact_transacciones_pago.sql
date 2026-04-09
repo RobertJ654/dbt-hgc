@@ -10,9 +10,6 @@ select
 
     p.id_pago_nk as nro_pago_dd,
     p.id_pedido_nk as nro_pedido_dd,
-    p.id_transaccion_externa_dd,
-    p.estado_confirmacion as estado_confirmacion_dd,
-    p.moneda as moneda_dd,
 
     p.monto_transaccion
 

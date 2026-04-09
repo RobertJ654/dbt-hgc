@@ -4,8 +4,6 @@ select
     id_pedido as id_pedido_nk,
     id_metodo as id_metodo_nk,
     cast(monto as numeric(10,2)) as monto_transaccion,
-    moneda,
-    estado_confirmacion,
-    cast(fecha_hora as timestamp) as fecha_hora_pago,
-    id_transaccion_externa
+    estado,
+    cast(fecha_pago as timestamp) as fecha_hora_pago
 from source

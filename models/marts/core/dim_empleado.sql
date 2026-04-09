@@ -10,7 +10,6 @@ select
     tipo_contrato,
     estado_empleado,
     cargo_titulo,
-    es_operativo,
     departamento_nombre,
     dbt_valid_from as valido_desde,
     dbt_valid_to as valido_hasta,
