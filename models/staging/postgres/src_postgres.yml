@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw_postgres
+    database: HGC_DW
+    description: "Datos transaccionales del core del negocio (POS y Delivery)"
+    tables:
+      - name: categorias_producto
+      - name: productos
+      - name: combo_detalle
+      - name: canales_venta
+      - name: estados_pedido
+      - name: pedidos
+      - name: detalle_pedido
+      - name: pedido_cupon
+      - name: plataformas_delivery
+      - name: delivery_orden

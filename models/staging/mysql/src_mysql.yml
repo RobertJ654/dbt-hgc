@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw_mysql
+    database: HGC_DW  
+    description: "Gestión de almacenes, recetas BOM, compras y mermas"
+    tables:
+      - name: insumos
+      - name: recetas_bom
+      - name: almacenes
+      - name: stock
+      - name: movimientos_inventario
+      - name: proveedores
+      - name: ordenes_compra
+      - name: detalle_oc
