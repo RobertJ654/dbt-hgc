@@ -8,7 +8,7 @@ select
     id_estado as id_estado_nk,
     id_fecha as id_fecha_nk,
     cast(fecha_hora as timestamp) as fecha_hora_transaccion,
-    coalesce(observaciones, 'Sin observaciones') as observaciones_pedido,
+    coalesce(cast(observaciones as varchar), 'Sin observaciones') as observaciones_pedido,
     cast(total_bruto as numeric(10,2)) as total_bruto,
     cast(total_descuento as numeric(10,2)) as total_descuento,
     cast(total_neto as numeric(10,2)) as total_neto,
